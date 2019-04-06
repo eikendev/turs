@@ -1,6 +1,6 @@
 # Turs
 
-A [Purs](https://github.com/xcambar/turs)-inspired prompt.
+A [Purs](https://github.com/xcambar/purs)-inspired prompt.
 
 ## Usage
 
