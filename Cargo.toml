@@ -2,6 +2,12 @@
 authors = ["eikendev"]
 name = "turs"
 version = "0.0.2"
+description = "A Purs-inspired prompt"
+edition = "2018"
+homepage = "https://github.com/eikendev/turs.git"
+repository = "https://github.com/eikendev/turs.git"
+readme = "README.md"
+license = "MIT"
 
 [dependencies]
 ansi_term = "^0.9"
