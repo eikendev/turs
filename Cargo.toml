@@ -1,10 +1,10 @@
 [package]
 authors = ["eikendev"]
 name = "turs"
-version = "0.0.2"
+version = "0.0.3"
 description = "A Purs-inspired prompt"
 edition = "2018"
-homepage = "https://github.com/eikendev/turs.git"
+homepage = "https://github.com/eikendev/turs"
 repository = "https://github.com/eikendev/turs.git"
 readme = "README.md"
 license = "MIT"
