@@ -4,8 +4,8 @@ A [Purs](https://github.com/xcambar/purs)-inspired prompt.
 
 ## Usage
 
-1. Build `turs` using `$ cargo build --release`
-1. Add the binary to your `$PATH`
+1. Install using `$ cargo install turs`
+1. Add Cargo binaries to your `$PATH` environment variable
 1. Add the following snippet to your ZSH configuration:
 
 ```zsh
