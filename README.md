@@ -8,7 +8,7 @@ A [Purs](https://github.com/xcambar/purs)-inspired prompt.
 1. Add the binary to your `$PATH`
 1. Add the following snippet to your ZSH configuration:
 
-```
+```zsh
 autoload -Uz add-zsh-hook
 
 function _prompt_turs_precmd() {
