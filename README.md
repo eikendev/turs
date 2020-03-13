@@ -1,8 +1,17 @@
-# Turs
+[![Build status](https://img.shields.io/travis/eikendev/turs/master)](https://travis-ci.org/github/eikendev/turs/builds/)
 
-A [Purs](https://github.com/xcambar/purs)-inspired prompt.
+[![License](https://img.shields.io/crates/l/turs)](https://crates.io/crates/turs)
 
-## Usage
+[![Version](https://img.shields.io/crates/v/turs)](https://crates.io/crates/turs)
+
+[![Downloads](https://img.shields.io/crates/d/turs)](https://crates.io/crates/turs)
+
+# About
+
+Turs is a [Purs](https://github.com/xcambar/purs)-inspired prompt.
+I love to keep things simple, and this prompt gives me everything I need.
+
+# Usage
 
 1. Install using `$ cargo install turs`
 1. Add Cargo binaries to your `$PATH` environment variable
