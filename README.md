@@ -3,12 +3,12 @@
 [![Version](https://img.shields.io/crates/v/turs)](https://crates.io/crates/turs)
 [![Downloads](https://img.shields.io/crates/d/turs)](https://crates.io/crates/turs)
 
-# About
+## About
 
 Turs is a [Purs](https://github.com/xcambar/purs)-inspired prompt.
 I love to keep things simple, and this prompt gives me everything I need.
 
-# Usage
+## Usage
 
 1. Install using `$ cargo install turs`
 1. Add Cargo binaries to your `$PATH` environment variable
@@ -43,7 +43,7 @@ _prompt_turs_rprompt
 add-zsh-hook precmd _prompt_turs_precmd
 ```
 
-# Development
+## Development
 
 The source code is located on [GitHub](https://github.com/eikendev/turs).
 To check out the repository, the following command can be used.
