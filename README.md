@@ -1,4 +1,4 @@
-[![Build status](https://img.shields.io/travis/eikendev/turs/master)](https://travis-ci.org/github/eikendev/turs/builds/)
+[![Build status](https://img.shields.io/travis/eikendev/turs/master)](https://travis-ci.com/github/eikendev/turs/builds/)
 [![License](https://img.shields.io/crates/l/turs)](https://crates.io/crates/turs)
 [![Version](https://img.shields.io/crates/v/turs)](https://crates.io/crates/turs)
 [![Downloads](https://img.shields.io/crates/d/turs)](https://crates.io/crates/turs)
