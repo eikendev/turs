@@ -4,7 +4,7 @@ deploy:
   provider: cargo
   token: "$CRATES_TOKEN"
   on:
-    branch: production
+    branch: master
     tags: true
 env:
   global:
