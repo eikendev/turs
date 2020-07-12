@@ -25,7 +25,7 @@ pub fn display(_matches: &ArgMatches) {
 
     let path = Fixed(defaults::color::BLUE).paint(path);
 
-    println!("");
+    println!();
     println!("{}", path);
 }
 

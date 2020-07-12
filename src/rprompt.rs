@@ -71,9 +71,10 @@ fn status(r: &Repository) -> Option<String> {
         }
     }
 
-    let (color, symbol) = match conflicted {
-        true => (defaults::color::RED, defaults::symbol::CONFLICT),
-        false => (defaults::color::GREEN, defaults::symbol::NOCONFLICT),
+    let (color, symbol) = if conflicted {
+        (defaults::color::RED, defaults::symbol::CONFLICT)
+    } else {
+        (defaults::color::GREEN, defaults::symbol::NOCONFLICT)
     };
 
     let status_signs = format!(" %F{{{}}}{}%f", color, symbol);
@@ -110,9 +111,8 @@ pub fn display(_matches: &ArgMatches) {
         _ => return,
     };
 
-    match display {
-        Some(d) => println!("[{}]", d),
-        _ => {}
+    if let Some(d) = display {
+        println!("[{}]", d);
     }
 }
 
