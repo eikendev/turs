@@ -1,5 +1,12 @@
 os: linux
 language: rust
+rust:
+  - stable
+  - beta
+before_script:
+  - rustup component add clippy
+script:
+  - make test
 deploy:
   provider: cargo
   token: "$CRATES_TOKEN"
