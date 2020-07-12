@@ -1,6 +1,6 @@
-use std::env;
 use ansi_term::Colour::Fixed;
-use clap::{ArgMatches, App, SubCommand};
+use clap::{App, ArgMatches, SubCommand};
+use std::env;
 use tico::tico;
 
 use super::defaults;

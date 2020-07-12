@@ -1,6 +1,6 @@
-use std::env;
-use clap::{ArgMatches, App, SubCommand};
+use clap::{App, ArgMatches, SubCommand};
 use git2::{Repository, Status, StatusOptions};
+use std::env;
 
 use super::defaults;
 
@@ -28,9 +28,9 @@ fn status(r: &Repository) -> Option<String> {
         _ => return None,
     };
 
-    let iterator = statuses.iter().filter(|e| {
-        e.status() != Status::CURRENT && e.status() != Status::IGNORED
-    });
+    let iterator = statuses
+        .iter()
+        .filter(|e| e.status() != Status::CURRENT && e.status() != Status::IGNORED);
 
     for entry in iterator {
         let status = entry.status();
@@ -67,7 +67,7 @@ fn status(r: &Repository) -> Option<String> {
         };
 
         if conflicted && index_dirty && wt_dirty && index_new && wt_new {
-            break
+            break;
         }
     }
 
@@ -112,7 +112,7 @@ pub fn display(_matches: &ArgMatches) {
 
     match display {
         Some(d) => println!("[{}]", d),
-        _ => {},
+        _ => {}
     }
 }
 

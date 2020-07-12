@@ -1,4 +1,4 @@
-use clap::{ArgMatches, App, SubCommand, Arg};
+use clap::{App, Arg, ArgMatches, SubCommand};
 
 use super::defaults;
 
@@ -25,14 +25,6 @@ pub fn display(matches: &ArgMatches) {
 
 pub fn cli_arguments<'a>() -> App<'a, 'a> {
     SubCommand::with_name("prompt")
-        .arg(
-            Arg::with_name("last_return_code")
-            .short("r")
-            .takes_value(true)
-            )
-        .arg(
-            Arg::with_name("keymap")
-            .short("k")
-            .takes_value(true)
-            )
+        .arg(Arg::with_name("last_return_code").short("r").takes_value(true))
+        .arg(Arg::with_name("keymap").short("k").takes_value(true))
 }

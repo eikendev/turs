@@ -6,10 +6,10 @@ extern crate tico;
 
 use clap::{App, AppSettings};
 
+mod defaults;
 mod precmd;
 mod prompt;
 mod rprompt;
-mod defaults;
 
 fn main() {
     let matches = App::new("Turs")
