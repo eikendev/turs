@@ -14,7 +14,7 @@ fn shorten_path(cwd: &str) -> String {
         _ => return String::from(""),
     };
 
-    tico(&path)
+    tico(&path, Option::None)
 }
 
 pub fn display(_matches: &ArgMatches) {

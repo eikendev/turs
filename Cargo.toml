@@ -10,8 +10,8 @@ readme = "README.md"
 license = "MIT"
 
 [dependencies]
-ansi_term = "^0.9"
-clap = "^2.26.1"
-dirs = "^1.0.0"
-git2 = "^0.8"
-tico = "^1.0.0"
+ansi_term = "^0.12"
+clap = "^2.33"
+dirs = "^3.0"
+git2 = "^0.13"
+tico = "^2.0"
