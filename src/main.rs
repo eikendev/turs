@@ -12,6 +12,8 @@ mod prompt;
 mod rprompt;
 
 fn main() {
+    human_panic::setup_panic!();
+
     let matches = App::new("Turs")
         .setting(AppSettings::SubcommandRequired)
         .subcommand(precmd::cli_arguments())
