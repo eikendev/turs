@@ -43,10 +43,10 @@ _prompt_turs_rprompt
 add-zsh-hook precmd _prompt_turs_precmd
 ```
 
-## Development
+## Installation
 
-The source code is located on [GitHub](https://github.com/eikendev/turs).
-To check out the repository, the following command can be used.
+### From crates.io
+
 ```bash
-git clone https://github.com/eikendev/turs.git
+cargo install turs
 ```
