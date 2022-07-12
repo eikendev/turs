@@ -16,8 +16,7 @@ fn status(r: &Repository) -> Option<String> {
         _ => return None,
     };
 
-    let mut branch;
-    branch = head.shorthand().unwrap().to_string();
+    let mut branch = head.shorthand().unwrap().to_string();
     branch = format!("%F{{{}}}{}%f", defaults::color::GREY, branch);
 
     let mut opts = StatusOptions::new();
