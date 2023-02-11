@@ -1,4 +1,4 @@
-[![Build status](https://img.shields.io/github/workflow/status/eikendev/turs/Main)](https://github.com/eikendev/turs/actions)
+[![Build status](https://img.shields.io/github/actions/workflow/status/eikendev/turs/main.yml?branch=main)](https://github.com/eikendev/turs/actions)
 [![License](https://img.shields.io/crates/l/turs)](https://crates.io/crates/turs)
 [![Version](https://img.shields.io/crates/v/turs)](https://crates.io/crates/turs)
 [![Downloads](https://img.shields.io/crates/d/turs)](https://crates.io/crates/turs)
