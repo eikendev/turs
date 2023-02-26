@@ -22,9 +22,9 @@ fn main() {
         .get_matches();
 
     match matches.subcommand() {
-        ("precmd", Some(sub_matches)) => precmd::display(sub_matches),
-        ("prompt", Some(sub_matches)) => prompt::display(sub_matches),
-        ("rprompt", Some(sub_matches)) => rprompt::display(sub_matches),
+        Some(("precmd", sub_matches)) => precmd::display(sub_matches),
+        Some(("prompt", sub_matches)) => prompt::display(sub_matches),
+        Some(("rprompt", sub_matches)) => rprompt::display(sub_matches),
         _ => (),
     }
 }

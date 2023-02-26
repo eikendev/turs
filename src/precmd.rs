@@ -26,9 +26,9 @@ pub fn display(_matches: &ArgMatches) {
     let path = Fixed(defaults::color::BLUE).paint(path);
 
     println!();
-    println!("{}", path);
+    println!("{path}");
 }
 
-pub fn cli_arguments<'a>() -> App<'a, 'a> {
+pub fn cli_arguments<'a>() -> App<'a> {
     SubCommand::with_name("precmd")
 }

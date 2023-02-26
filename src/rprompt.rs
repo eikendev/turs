@@ -17,7 +17,7 @@ fn status(r: &Repository) -> Option<String> {
     };
 
     let mut branch = head.shorthand().unwrap().to_string();
-    branch = format!("%F{{{}}}{}%f", defaults::color::GREY, branch);
+    branch = format!("%F{{{}}}{branch}%f", defaults::color::GREY);
 
     let mut opts = StatusOptions::new();
     opts.include_untracked(true);
@@ -76,7 +76,7 @@ fn status(r: &Repository) -> Option<String> {
         (defaults::color::GREEN, defaults::symbol::NOCONFLICT)
     };
 
-    let status_signs = format!(" %F{{{}}}{}%f", color, symbol);
+    let status_signs = format!(" %F{{{color}}}{symbol}%f");
     branch.push_str(&status_signs);
 
     if index_dirty {
@@ -111,10 +111,10 @@ pub fn display(_matches: &ArgMatches) {
     };
 
     if let Some(d) = display {
-        println!("[{}]", d);
+        println!("[{d}]");
     }
 }
 
-pub fn cli_arguments<'a>() -> App<'a, 'a> {
+pub fn cli_arguments<'a>() -> App<'a> {
     SubCommand::with_name("rprompt")
 }

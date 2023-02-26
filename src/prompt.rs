@@ -20,11 +20,11 @@ pub fn display(matches: &ArgMatches) {
         _ => defaults::color::RED,
     };
 
-    print!("%F{{{}}}{}%f ", color, symbol);
+    print!("%F{{{color}}}{symbol}%f ");
 }
 
-pub fn cli_arguments<'a>() -> App<'a, 'a> {
+pub fn cli_arguments<'a>() -> App<'a> {
     SubCommand::with_name("prompt")
-        .arg(Arg::with_name("last_return_code").short("r").takes_value(true))
-        .arg(Arg::with_name("keymap").short("k").takes_value(true))
+        .arg(Arg::with_name("last_return_code").short('r').takes_value(true))
+        .arg(Arg::with_name("keymap").short('k').takes_value(true))
 }

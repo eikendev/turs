@@ -11,8 +11,8 @@ license = "MIT"
 
 [dependencies]
 ansi_term = "^0.12"
-clap = "^2.33"
-dirs = "^3.0"
-git2 = "^0.13"
-human-panic = "1.0.3"
+clap = "^3.0.0"
+dirs = "^4.0"
+git2 = "^0.16.0"
+human-panic = "^1.1.0"
 tico = "^2.0"
