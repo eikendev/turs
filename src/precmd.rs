@@ -1,5 +1,4 @@
 use ansi_term::Colour::Fixed;
-use clap::{App, ArgMatches, SubCommand};
 use std::env;
 use tico::tico;
 
@@ -17,7 +16,7 @@ fn shorten_path(cwd: &str) -> String {
     tico(&path, Option::None)
 }
 
-pub fn display(_matches: &ArgMatches) {
+pub fn display() {
     let path = match env::current_dir() {
         Ok(path) => shorten_path(path.to_str().unwrap()),
         _ => String::from("???"),
@@ -27,8 +26,4 @@ pub fn display(_matches: &ArgMatches) {
 
     println!();
     println!("{path}");
-}
-
-pub fn cli_arguments<'a>() -> App<'a> {
-    SubCommand::with_name("precmd")
 }

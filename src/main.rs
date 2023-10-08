@@ -1,11 +1,6 @@
-extern crate ansi_term;
-extern crate clap;
-extern crate dirs;
-extern crate git2;
-extern crate tico;
+use clap::Parser;
 
-use clap::{App, AppSettings};
-
+mod cli;
 mod defaults;
 mod precmd;
 mod prompt;
@@ -14,17 +9,14 @@ mod rprompt;
 fn main() {
     human_panic::setup_panic!();
 
-    let matches = App::new("Turs")
-        .setting(AppSettings::SubcommandRequired)
-        .subcommand(precmd::cli_arguments())
-        .subcommand(prompt::cli_arguments())
-        .subcommand(rprompt::cli_arguments())
-        .get_matches();
+    let cli = cli::Cli::parse();
 
-    match matches.subcommand() {
-        Some(("precmd", sub_matches)) => precmd::display(sub_matches),
-        Some(("prompt", sub_matches)) => prompt::display(sub_matches),
-        Some(("rprompt", sub_matches)) => rprompt::display(sub_matches),
-        _ => (),
+    match &cli.command {
+        cli::Commands::Precmd {} => precmd::display(),
+        cli::Commands::Prompt {
+            keymap,
+            last_return_code,
+        } => prompt::display(keymap, last_return_code),
+        cli::Commands::Rprompt {} => rprompt::display(),
     }
 }

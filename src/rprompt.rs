@@ -1,4 +1,3 @@
-use clap::{App, ArgMatches, SubCommand};
 use git2::{Repository, Status, StatusOptions};
 use std::env;
 
@@ -99,7 +98,7 @@ fn status(r: &Repository) -> Option<String> {
     Some(branch)
 }
 
-pub fn display(_matches: &ArgMatches) {
+pub fn display() {
     let path = match env::current_dir() {
         Ok(path) => path,
         _ => return,
@@ -113,8 +112,4 @@ pub fn display(_matches: &ArgMatches) {
     if let Some(d) = display {
         println!("[{d}]");
     }
-}
-
-pub fn cli_arguments<'a>() -> App<'a> {
-    SubCommand::with_name("rprompt")
 }
