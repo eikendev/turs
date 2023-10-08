@@ -1,7 +1,7 @@
 [package]
 authors = ["eikendev"]
 name = "turs"
-version = "0.0.8"
+version = "0.1.0"
 description = "A Purs-inspired prompt"
 edition = "2021"
 homepage = "https://github.com/eikendev/turs"
