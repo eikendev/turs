@@ -8,6 +8,8 @@
 Turs is a [Purs](https://github.com/xcambar/purs)-inspired prompt.
 I love to keep things simple, and this prompt gives me everything I need.
 
+![Screenshot](.github/screenshot.png)
+
 ## Usage
 
 1. Install using `$ cargo install turs`
