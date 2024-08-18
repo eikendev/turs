@@ -10,6 +10,9 @@ I love to keep things simple, and this prompt gives me everything I need.
 
 ![Screenshot](.github/screenshot.png)
 
+> [!IMPORTANT]
+> This project is no longer maintained. Although I'm still holding the "turs" package name on crates.io, if you need it or are interested in taking over, please reach out.
+
 ## Usage
 
 1. Install using `$ cargo install turs`
